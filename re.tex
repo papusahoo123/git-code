@@ -22,9 +22,27 @@ git add . and git commit -m "add file"
 
 connection betn local and git hub
 git remote add origin https://github.com/papusahoo123/project2.git
-git remote-v
+
+git remote -v
 git branch 
 git push -u origin main (or) git push -u origin main --force   
+
+
+
+if i  have a one project1 in( https://github.com/papusahoo123/len.git) repo i want to  add  diffent  repo -> https://github.com/papusahoo123/project3.git or https://github.com/papusahoo123/new1.git
+fist see the cuurrnt stage 
+-> git remote -v 
+origin  https://github.com/papusahoo123/len.git (fetch)
+origin  https://github.com/papusahoo123/len.git (push)
+
+i want add diffent repo -> https://github.com/papusahoo123/project3.git or https://github.com/papusahoo123/new1.git
+-> git remote set-url origin https://github.com/papusahoo123/project3.git
+then cheak it swich one repo to anthor -> git remote -v
+
+-> git remote remove origin
+-> git remote add origin  https://github.com/papusahoo123/project3.git
+
+git push -u origin main
 
 
 // for shot-cut push in git hub
